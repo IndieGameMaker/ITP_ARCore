@@ -785,8 +785,8 @@ MonoBehaviour:
   - {fileID: 965084446}
   - {fileID: 1997983950}
   - {fileID: 1338786310}
-  updownSpeed: 10
-  forwardSpeed: 10
+  updownSpeed: 2
+  forwardSpeed: 5
   rotateSpeed: 80
   leftJoyStick: {fileID: 20093061}
   rightJoyStick: {fileID: 60699575}

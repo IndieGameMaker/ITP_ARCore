@@ -14,7 +14,7 @@ public class TouchMgr : MonoBehaviour
     void Start()
     {
         arCamera = Camera.main;
-        monster = Resources.Load<GameObject>("Monster");
+        monster = Resources.Load<GameObject>("Drone");
     }
 
     // Update is called once per frame
