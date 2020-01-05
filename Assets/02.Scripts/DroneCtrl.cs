@@ -9,7 +9,7 @@ public class DroneCtrl : MonoBehaviour
 
     public float updownSpeed = 10.0f;   //상승,하강 속도
     public float forwardSpeed = 10.0f;  //전후진 속도
-    public float rotateSpeed = 80.0f;   //회전 속도ㅊ
+    public float rotateSpeed = 80.0f;   //회전 속도
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,14 @@ public class DroneCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        RotateWings();
+    }
+
+    void RotateWings()
+    {
+        for (int i=0; i<wings.Length; i++)
+        {
+            wings[i].Rotate(Vector3.up * Time.deltaTime * 2000.0f);
+        }
     }
 }
