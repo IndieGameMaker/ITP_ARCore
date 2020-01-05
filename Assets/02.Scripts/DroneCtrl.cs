@@ -9,7 +9,7 @@ public class DroneCtrl : MonoBehaviour
 
     public float updownSpeed = 10.0f;   //상승,하강 속도
     public float forwardSpeed = 10.0f;  //전후진 속도
-    
+    public float rotateSpeed = 80.0f;   //회전 속도ㅊ
 
     // Start is called before the first frame update
     void Start()
