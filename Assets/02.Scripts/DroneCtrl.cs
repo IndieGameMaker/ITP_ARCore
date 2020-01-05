@@ -24,6 +24,11 @@ public class DroneCtrl : MonoBehaviour
     void Update()
     {
         RotateWings();
+
+        //상승/하강
+        float throttle = leftJoyStick.Vertical; //-1.0f ~ 0.0f ~ 1.0f
+        transform.Translate(Vector3.up * Time.deltaTime * updownSpeed);
+
     }
 
     void RotateWings()
