@@ -28,7 +28,7 @@ public class TouchMgr : MonoBehaviour
             && Frame.Raycast(touch.position.x, touch.position.y, flags, out hit))
         {
             var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-            Instantiate(monster, hit.Pose.position, Quaternion.identity, anchor.transform);
+            Instantiate(monster, hit.Pose.position, hit.Pose.rotation, anchor.transform);
         }
     }
 }
