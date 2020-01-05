@@ -22,6 +22,10 @@ public class TouchMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         if (isCreateDrone == true) return;
         if (Input.touchCount == 0) return;
 
